@@ -19,7 +19,7 @@
                 "shares": 1,
                 "min_stake_provider": {
                     "denom": "ulava",
-                    "amount": "47500000000"
+                    "amount": "15000000000"
                 },
                 "api_collections": [
                     {
@@ -339,6 +339,10 @@
                                 "values": [
                                     {
                                         "latest_distance": 14400
+                                    },
+                                    {
+                                        "extension": "archive",
+                                        "latest_distance": 1000000
                                     }
                                 ]
                             }
@@ -901,7 +905,11 @@
                                 "name": "pruning",
                                 "values": [
                                     {
-                                        "latest_distance": 5760
+                                        "latest_distance": 14400
+                                    },
+                                    {
+                                        "extension": "archive",
+                                        "latest_distance": 1000000
                                     }
                                 ]
                             }
@@ -978,7 +986,7 @@
                 "shares": 1,
                 "min_stake_provider": {
                     "denom": "ulava",
-                    "amount": "47500000000"
+                    "amount": "15000000000"
                 },
                 "api_collections": [
                     {
@@ -1054,5 +1062,5 @@
             }
         ]
     },
-    "deposit": "10000000ulava"
+    "deposit": "1750000000ulava"
 }

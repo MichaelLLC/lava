@@ -8,7 +8,7 @@
                 "name": "archway mainnet",
                 "enabled": true,
                 "imports": [
-                    "COSMOSSDK"
+                    "COSMOSSDK50DEP"
                 ],
                 "reliability_threshold": 268435455,
                 "data_reliability_enabled": true,

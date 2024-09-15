@@ -23,7 +23,7 @@
                     {
                         "enabled": true,
                         "collection_data": {
-                            "api_interface": "cometbftrpc",
+                            "api_interface": "tendermintrpc",
                             "internal_path": "",
                             "type": "",
                             "add_on": ""

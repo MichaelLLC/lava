@@ -32,7 +32,61 @@
                         },
                         "apis": [
                             {
-                                "name": "/stargaze/globalfee/v1/contract_authorization/{contract_address}",
+                                "name": "/stargaze/alloc/v1beta1/params",
+                                "block_parsing": {
+                                    "parser_arg": [
+                                        "latest"
+                                    ],
+                                    "parser_func": "DEFAULT"
+                                },
+                                "compute_units": 10,
+                                "enabled": true,
+                                "category": {
+                                    "deterministic": true,
+                                    "local": false,
+                                    "subscription": false,
+                                    "stateful": 0
+                                },
+                                "extra_compute_units": 0
+                            },
+                            {
+                                "name": "/stargaze/cron/v1/list-privileged",
+                                "block_parsing": {
+                                    "parser_arg": [
+                                        "latest"
+                                    ],
+                                    "parser_func": "DEFAULT"
+                                },
+                                "compute_units": 10,
+                                "enabled": true,
+                                "category": {
+                                    "deterministic": true,
+                                    "local": false,
+                                    "subscription": false,
+                                    "stateful": 0
+                                },
+                                "extra_compute_units": 0
+                            },
+                            {
+                                "name": "/stargaze/cron/v1/params",
+                                "block_parsing": {
+                                    "parser_arg": [
+                                        "latest"
+                                    ],
+                                    "parser_func": "DEFAULT"
+                                },
+                                "compute_units": 10,
+                                "enabled": true,
+                                "category": {
+                                    "deterministic": true,
+                                    "local": false,
+                                    "subscription": false,
+                                    "stateful": 0
+                                },
+                                "extra_compute_units": 0
+                            },
+                            {
+                                "name": "/stargaze/globalfee/v1/authorizations",
                                 "block_parsing": {
                                     "parser_arg": [
                                         "latest"
@@ -68,7 +122,7 @@
                                 "extra_compute_units": 0
                             },
                             {
-                                "name": "/stargaze/tokenfactory/v1/denoms_from_creator/{creator}",
+                                "name": "/stargaze/globalfee/v1/contract_authorization/{contract_address}",
                                 "block_parsing": {
                                     "parser_arg": [
                                         "latest"
@@ -86,25 +140,7 @@
                                 "extra_compute_units": 0
                             },
                             {
-                                "name": "/stargaze/tokenfactory/v1/denoms/{denom}/authority_metadata",
-                                "block_parsing": {
-                                    "parser_arg": [
-                                        "latest"
-                                    ],
-                                    "parser_func": "DEFAULT"
-                                },
-                                "compute_units": 10,
-                                "enabled": true,
-                                "category": {
-                                    "deterministic": true,
-                                    "local": false,
-                                    "subscription": false,
-                                    "stateful": 0
-                                },
-                                "extra_compute_units": 0
-                            },
-                            {
-                                "name": "/stargaze/mint/v1beta1/params",
+                                "name": "/stargaze/globalfee/v1/params",
                                 "block_parsing": {
                                     "parser_arg": [
                                         "latest"
@@ -140,7 +176,61 @@
                                 "extra_compute_units": 0
                             },
                             {
-                                "name": "/stargaze/cron/v1/list-privileged",
+                                "name": "/stargaze/mint/v1beta1/params",
+                                "block_parsing": {
+                                    "parser_arg": [
+                                        "latest"
+                                    ],
+                                    "parser_func": "DEFAULT"
+                                },
+                                "compute_units": 10,
+                                "enabled": true,
+                                "category": {
+                                    "deterministic": true,
+                                    "local": false,
+                                    "subscription": false,
+                                    "stateful": 0
+                                },
+                                "extra_compute_units": 0
+                            },
+                            {
+                                "name": "/stargaze/tokenfactory/v1/denoms/{denom}/authority_metadata",
+                                "block_parsing": {
+                                    "parser_arg": [
+                                        "latest"
+                                    ],
+                                    "parser_func": "DEFAULT"
+                                },
+                                "compute_units": 10,
+                                "enabled": true,
+                                "category": {
+                                    "deterministic": true,
+                                    "local": false,
+                                    "subscription": false,
+                                    "stateful": 0
+                                },
+                                "extra_compute_units": 0
+                            },
+                            {
+                                "name": "/stargaze/tokenfactory/v1/denoms_from_creator/{creator}",
+                                "block_parsing": {
+                                    "parser_arg": [
+                                        "latest"
+                                    ],
+                                    "parser_func": "DEFAULT"
+                                },
+                                "compute_units": 10,
+                                "enabled": true,
+                                "category": {
+                                    "deterministic": true,
+                                    "local": false,
+                                    "subscription": false,
+                                    "stateful": 0
+                                },
+                                "extra_compute_units": 0
+                            },
+                            {
+                                "name": "/stargaze/tokenfactory/v1/params",
                                 "block_parsing": {
                                     "parser_arg": [
                                         "latest"
@@ -246,24 +336,6 @@
                                     "stateful": 0
                                 },
                                 "extra_compute_units": 0
-                            },
-                            {
-                                "name": "/stargaze/alloc/v1beta1/params",
-                                "block_parsing": {
-                                    "parser_arg": [
-                                        "latest"
-                                    ],
-                                    "parser_func": "DEFAULT"
-                                },
-                                "compute_units": 10,
-                                "enabled": true,
-                                "category": {
-                                    "deterministic": true,
-                                    "local": false,
-                                    "subscription": false,
-                                    "stateful": 0
-                                },
-                                "extra_compute_units": 0
                             }
                         ],
                         "headers": [],
@@ -310,6 +382,24 @@
                             "add_on": ""
                         },
                         "apis": [
+                            {
+                                "name": "publicawesome.stargaze.mint.v1beta1.Query/Params",
+                                "block_parsing": {
+                                    "parser_arg": [
+                                        "latest"
+                                    ],
+                                    "parser_func": "DEFAULT"
+                                },
+                                "compute_units": 10,
+                                "enabled": true,
+                                "category": {
+                                    "deterministic": true,
+                                    "local": false,
+                                    "subscription": false,
+                                    "stateful": 0
+                                },
+                                "extra_compute_units": 0
+                            },
                             {
                                 "name": "publicawesome.stargaze.mint.v1beta1.Query/AnnualProvisions",
                                 "block_parsing": {
@@ -365,7 +455,43 @@
                                 "extra_compute_units": 0
                             },
                             {
-                                "name": "publicawesome.stargaze.mint.v1beta1.Query/Params",
+                                "name": "publicawesome.stargaze.globalfee.v1.Query/ContractAuthorization",
+                                "block_parsing": {
+                                    "parser_arg": [
+                                        "latest"
+                                    ],
+                                    "parser_func": "DEFAULT"
+                                },
+                                "compute_units": 10,
+                                "enabled": true,
+                                "category": {
+                                    "deterministic": true,
+                                    "local": false,
+                                    "subscription": false,
+                                    "stateful": 0
+                                },
+                                "extra_compute_units": 0
+                            },
+                            {
+                                "name": "publicawesome.stargaze.globalfee.v1.Query/Authorizations",
+                                "block_parsing": {
+                                    "parser_arg": [
+                                        "latest"
+                                    ],
+                                    "parser_func": "DEFAULT"
+                                },
+                                "compute_units": 10,
+                                "enabled": true,
+                                "category": {
+                                    "deterministic": true,
+                                    "local": false,
+                                    "subscription": false,
+                                    "stateful": 0
+                                },
+                                "extra_compute_units": 0
+                            },
+                            {
+                                "name": "publicawesome.stargaze.cron.v1.Query/Params",
                                 "block_parsing": {
                                     "parser_arg": [
                                         "latest"
@@ -455,61 +581,7 @@
                                 "extra_compute_units": 0
                             },
                             {
-                                "name": "publicawesome.stargaze.cron.v1.Query/Params",
-                                "block_parsing": {
-                                    "parser_arg": [
-                                        "latest"
-                                    ],
-                                    "parser_func": "DEFAULT"
-                                },
-                                "compute_units": 10,
-                                "enabled": true,
-                                "category": {
-                                    "deterministic": true,
-                                    "local": false,
-                                    "subscription": false,
-                                    "stateful": 0
-                                },
-                                "extra_compute_units": 0
-                            },
-                            {
                                 "name": "osmosis.tokenfactory.v1beta1.Query/DenomsFromCreator",
-                                "block_parsing": {
-                                    "parser_arg": [
-                                        "latest"
-                                    ],
-                                    "parser_func": "DEFAULT"
-                                },
-                                "compute_units": 10,
-                                "enabled": true,
-                                "category": {
-                                    "deterministic": true,
-                                    "local": false,
-                                    "subscription": false,
-                                    "stateful": 0
-                                },
-                                "extra_compute_units": 0
-                            },
-                            {
-                                "name": "publicawesome.stargaze.globalfee.v1.Query/ContractAuthorization",
-                                "block_parsing": {
-                                    "parser_arg": [
-                                        "latest"
-                                    ],
-                                    "parser_func": "DEFAULT"
-                                },
-                                "compute_units": 10,
-                                "enabled": true,
-                                "category": {
-                                    "deterministic": true,
-                                    "local": false,
-                                    "subscription": false,
-                                    "stateful": 0
-                                },
-                                "extra_compute_units": 0
-                            },
-                            {
-                                "name": "publicawesome.stargaze.globalfee.v1.Query/Authorizations",
                                 "block_parsing": {
                                     "parser_arg": [
                                         "latest"
